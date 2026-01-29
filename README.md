@@ -30,7 +30,7 @@ calendly_mock/
 
 ---
 
-## ⚙️ Setup & Run
+## Setup & Run
 
 ```bash
 pip install -r requirements.txt
@@ -51,7 +51,7 @@ http://127.0.0.1:8000/docs
 
 ---
 
-## 🏥 Appointment Types & Durations
+## Appointment Types & Durations
 
 | Appointment Type | Duration |
 | ---------------- | -------- |
@@ -113,7 +113,7 @@ GET /api/calendly/availability?date=2026-01-30&appointment_type=Consultation
 }
 ```
 
-### ⚠️ Important
+### Important
 
 If a time slot is **already booked**, then in the response:
 
@@ -129,7 +129,7 @@ If a time slot is **free**, then:
 
 ---
 
-## 🚫 No Availability Scenario
+## No Availability Scenario
 
 If no slots are available for a selected date and appointment type:
 
@@ -142,7 +142,7 @@ If no slots are available for a selected date and appointment type:
 
 ---
 
-## 📝 2. Book an Appointment
+## 2. Book an Appointment
 
 **Endpoint**
 
@@ -180,7 +180,7 @@ POST /api/calendly/book
 
 ---
 
-## 🧠 Core Logic Summary
+## Core Logic Summary
 
 - Slots are generated dynamically based on:
   - Appointment type
@@ -199,15 +199,3 @@ So:
 - Free slot → `"available": true`
 
 ---
-
-## 🎯 Why This Project?
-
-This project demonstrates:
-
-- Clean API architecture
-- Real-world scheduling logic
-- Strong backend fundamentals
-- Proper error handling
-- Readable and production-style code structure
-
-Perfect for technical assessments and backend-focused interviews.
